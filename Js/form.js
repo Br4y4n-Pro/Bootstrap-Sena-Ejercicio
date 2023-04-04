@@ -37,12 +37,14 @@ const enviarFormulario = (event) => {
     if(validezString(nombre)){
         console.log(`Nombre: ${nombre}`);
     }else{
+        alert(`Solo se acepta texto en el campo nombre`)
         console.warn(`Solo se acepta texto en el campo nombre`)
         return
     }
     if (validezString(Apellido)) {
         console.log(`Apellido: ${Apellido}`);
     }else{
+        alert(`Solo se acepta texto en el campo Apellido`)
         console.warn(`Solo se acepta texto en el campo Apellido`)
         return
     }
@@ -50,6 +52,7 @@ const enviarFormulario = (event) => {
     if(validezCorreo(Email)){
         console.log(`Email: ${Email}`);
     }else{
+        alert(`Formato incorrecto para este campo Email`)
         console.warn(`Formato incorrecto para este campo Email`)
         return
     }
@@ -58,23 +61,27 @@ const enviarFormulario = (event) => {
     if (validezNumero(Edad)) {
        console.log(`Edad: ${Edad}`); 
    }else{
+       alert(`Solo escribe numeros`)
     console.warn(`Solo escribe numeros`)
    }
     
     
    if (Archivo ==="") {
+       alert('El campo quedo vacio')
      console.warn('El campo quedo vacio')
    }else{
     console.log(`Archivo: ${Archivo}`)
    }
     
     if (texto ==="") {
+        alert("El campo quedo vacio")
         console.warn("El campo quedo vacio")
         return
     }
     if (validezString(texto)) {
           console.log(`Mensaje: ${texto}`);
     }else{
+        alert(`Solo se acepta texto quieres colocar numeros escribelos uno,dos,etc...`)
         console.warn(`Solo se acepta texto quieres colocar numeros escribelos uno,dos,etc...`)
     }
 }
