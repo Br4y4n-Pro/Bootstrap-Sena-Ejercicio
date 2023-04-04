@@ -1,0 +1,71 @@
+  body{
+            box-sizing: border-box;
+        }
+        .card{
+            background-color:white;
+            color:black;
+            transition: .5s ease;
+        }
+        
+        .card:hover{
+            background-color:#47d64a;
+            color:white;
+            transition: .5s ease;
+        }
+        .w-10{
+            width: 10%;
+            
+        }
+        .w-5{
+            width: 5%;
+        }
+
+        .w-15{
+            width: 15%;
+        }
+        
+        .circle-card{
+            
+            border-radius:50%;
+            background-color:#f8f9fa;
+        }
+
+        .animation{
+            overflow: hidden;
+        }
+
+        .animation img{
+            
+            transition: 0.5s;
+            object-fit: cover;
+        }
+
+        .animation img:hover{
+            transform: scale(1.2);
+        }
+        .seleccion {
+        	height: 50vh;
+        	border: 1px solid #3db61c;
+        	transition: .5s;
+        	width: 50vh;
+        }
+       
+       .seleccion img {
+       	border:1px solid #3db61c;
+       }
+       .seleccion:hover img{
+       	border: 1px solid #3db20c;
+       	transform: scale(1.2);
+       }
+
+       .seleccion:hover{
+       	border: none;
+       	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2) ;
+       	color:#37c411;
+       	transition: .5s;
+       }
+
+       footer a{
+        text-decoration: none;
+       }
+    
