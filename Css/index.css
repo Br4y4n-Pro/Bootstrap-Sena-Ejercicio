@@ -44,7 +44,7 @@
             transform: scale(1.2);
         }
         .seleccion {
-        	height: 50vh;
+        	height: 300px;
         	border: 1px solid #3db61c;
         	transition: .5s;
         }
